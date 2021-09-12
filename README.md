@@ -26,6 +26,7 @@ xampp, mysql
   * User can sign in to the system.
   * User can register.
   * User can sign out from the system.
+  * User can do live search.
 
 * **User Control**  :
   * Admin Panel:
@@ -44,10 +45,8 @@ xampp, mysql
 Import the model in your database available [here](https://github.com/tanjimanasreen/ClassroomBookingSystemExtended/tree/master/model) in `cbs.sql` file. 
 
 ### Database Connection:
-```
-  
+``` 
 <?php
-
 function execute($query){
 
     $conn= mysqli_connect('localhost','root','','cbs');
@@ -56,8 +55,6 @@ function execute($query){
         mysqli_close($conn);
 
         return $result;
-
-
 }
 ?>
 ```
@@ -66,3 +63,24 @@ function execute($query){
 * Admin Username: 123-45678-1, Password : 123
 * Faculty Username : 16-31237-1, Password : Abc1234%
 ```
+---
+### Relational Schema Diagram :
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/schema.png "Realtional Schema")
+---
+### User Interface:
+#### Login Page
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/login_page.png "Login Page")
+### Registration Page:
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/user_registration.png "Registration Page")
+---
+#### Admin Panel:
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/admin_1.png "Landing Page")
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/admin_booking_log.png "Admin Booking Log")
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/admin_bookings.png "Create Bookings")
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/admin_cancel.png "Cancel Bookings")
+---
+#### Faculty Panel:
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/user_1.png "Landing Page")
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/user_booking_log.png "User Booking Log")
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/user_bookings.png "Create Bookings")
+![alt text](https://github.com/tanjimanasreen/Classroom-Booking-System/blob/master/screenshots/user_cancel.png "Cancel Bookings")
