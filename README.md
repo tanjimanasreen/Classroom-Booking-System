@@ -9,7 +9,7 @@ For Faculty, Username : 16-31237-1, password : Abc1234%
 
 ### Prerequisites
 ```
-xampp, mysql
+Apache Server for php (e.g., xampp), MySql
 ```
 
 ### Target Users of this application:
